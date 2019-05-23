@@ -1,6 +1,6 @@
 //for exports User
 var User = require('./user');
-var bd= require('bd');
+var bd= require('./bd');
 
 
 function run() {
