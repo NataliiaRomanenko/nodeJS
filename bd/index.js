@@ -1,6 +1,6 @@
 var phrases;
 exports.connect = function () {
-    phrases = require('bd/ru')
+    phrases = require('./ru')
 }
 exports.getPhrases = function (name) {
     if(!phrases[name]){

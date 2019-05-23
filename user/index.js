@@ -1,18 +1,18 @@
-var db = require('../node_modules/bd')
+var db = require('../bd')
 db.connect();
 var log = require('logger') (module);
 
-function Index(name) {
+function User(name) {
     this.name = name;
 };
 
-Index.prototype.hello = function (who) {
+User.prototype.hello = function (who) {
     log(db.getPhrases("Hello") + ", " + who.name )
 };
 
 console.log("user.js is required!");
 
-module.exports = Index;
-// global.Index = Index;
+module.exports = User;
+// global.User = User;
 
 //console.log(module);
